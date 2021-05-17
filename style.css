@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: Catamaran;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  height: 25vh;
+}
+
+.header-item {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#round {
+  margin-top: 20px;
+}
+
+#announce {
+  font-size: 30px;
+}
+
+#scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 8vw 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#choices {
+  margin: 50px auto;
+  width: 70vw;
+  height: 20vh;
+}
+
+#middle {
+  display: grid;
+  grid-template-columns: 1fr 13vw 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto 80px;
+  height: 60px;
+  width: 60vw;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.choice {
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: auto;
+  font-size: 50px;
+  width: 70px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#playerPick,
+#cpuPick,
+.head {
+  font-size: 60px;
+}

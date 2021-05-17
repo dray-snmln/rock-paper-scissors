@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="header-item picks" id="player">
+        <p>Player</p>
+        <div class="head">😎</div>
+      </div>
+      <div class="header-item">
+        <div id="round">
+          <span>Round</span>
+          <span id="counter">1</span>
+        </div>
+        <div class="scores"> 
+          <h1 id="playerscore">0</h1>
+          <p>-</p>
+          <h1 id="cpuscore">0</h1>
+        </div>
+      </div>
+      <div class="header-item picks" id="cpu">
+        <p>CPU</p>
+        <div class="head">🤖</div>
+      </div>
+    </header>
+    <section id="middle">
+      <div id="playerPick"></div>
+      <div id="announce">Game Start!</div>
+      <div id="cpuPick"></div>
+    </section>
+    <button id="reset">Reset</button>
+    <section id="choices">
+      <button class="choice" id="rock">&#9994</button>
+      <button class="choice" id="paper">&#128400</button>
+      <button class="choice" id="scissors">&#9996</button>
+    </section>
+  </main>
+<script src="./script.js"></script>
+</body>
+</html>
