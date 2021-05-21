@@ -12,7 +12,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 80px 1fr;
+  grid-template-columns: 1fr 180px 1fr;
   height: 25vh;
 }
 
@@ -24,10 +24,6 @@ header {
 
 #round {
   margin-top: 20px;
-}
-
-#announce {
-  font-size: 30px;
 }
 
 #scoreboard {
@@ -44,14 +40,28 @@ header {
   height: 20vh;
 }
 
+#announce {
+  font-size: 30px;
+  width: 100%;
+  grid-area: announce;
+}
+
+#playerPick {
+  grid-area: player;
+}
+
+#cpuPick {
+  grid-area: cpu;
+}
+
 #middle {
   display: grid;
-  grid-template-columns: 1fr 13vw 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: auto auto 80px;
-  height: 60px;
-  width: 60vw;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 100px 1fr;
+  grid-template-areas: 'player . cpu';
+  width: 70vw;
+  height: auto;
+  margin: auto;
 }
 
 .scores {

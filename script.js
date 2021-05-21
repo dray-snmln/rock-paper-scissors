@@ -30,8 +30,8 @@ function reset() {
   counter.innerHTML = count
   currPScore = 0
   currCPUScore = 0
-  playerPick.innerHTML = ''
-  cpuPick.innerHTML = ''
+  playerPick.innerHTML = '💪'
+  cpuPick.innerHTML = '🦾'
   playerScore.innerHTML = currPScore
   cpuScore.innerHTML = currCPUScore
   announce.innerHTML = 'Game Start!'
